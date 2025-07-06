@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilo base */
+#instagram,
+#whatsapp,
+#github {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border-radius: 50%;
+  background-color: var(--cor1);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+/* Mantém imagem centralizada no círculo */
+#instagram img,
+#whatsapp img,
+#github img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  z-index: 2; /* fica acima do texto */
+  transition: all 0.5s ease;
+}
+
+/* Texto escondido por padrão */
+#instagram .texto,
+#whatsapp .texto,
+#github .texto {
+  position: absolute;
+  right: 20px;
+  opacity: 0;
+  color: rgb(246, 6, 6);
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+  white-space: nowrap;
+}
+
+/* Ao passar o mouse: expande para a direita */
+#instagram:hover,
+#whatsapp:hover,
+#github:hover {
+  width: 350px;
+  border-radius: 50px; /* formato cápsula */
+  justify-content: center; /* mantém img no lugar */
+  padding-left: 0;
+}
+
+/* Mostra o texto na parte expandida */
+#instagram:hover .texto,
+#whatsapp:hover .texto,
+#github:hover .texto {
+  opacity: 1;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="instagram">
+        <img src="imagens/instagram logo.png" alt="Instagram">
+        <span class="texto">Instagram</span>
+      </div>
+      
+</body>
+</html>

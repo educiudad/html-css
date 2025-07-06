@@ -1,0 +1,58 @@
+@font-face {
+    src: url(fontes/Bebas-Regular.ttf) format('truetype');
+    font-family: 'Bebas';
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: linear-gradient(to right, #042326, #0F5959);
+}
+
+main{
+    background-color: #159a82b7;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #022b3b;
+    width : 500px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-family: "bebas";
+    margin-top: 50px;
+}
+
+h2{
+    font-family: "bebas";
+    font-size: 40px;
+    color: #041e20;
+}
+
+input {
+    background-color: #159a827b;
+    box-shadow: 2px 2px 10px #0e4e4e; 
+    border-radius: 5px;
+    border-color: #0c4040;
+    font-size: 20px;
+}
+
+  button{
+    background-color: #159a827b; 
+    box-shadow: 2px 2px 10px #0e4e4e; 
+    border-radius: 5px;
+    border-color: #0c4040;
+    
+  }
+
+  label{
+    color: #041e20;
+  }
+
+  .emogi {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    z-index: 1;
+
+}
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>você quer?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+        <div class="titulo">
+            <h1>Você quer sair comigo?</h1>
+        </div>
+
+            <button  class="botao-sim">sim</button>
+            <button class="botao-claro">claro</button>
+            <button class="botao-obvio">obvio</button>
+        
+
+        <div>
+            <h2 class="titulo">quando a gente vai sair?</h2>
+            <input type="date" id="data" name="data">
+        </div>
+
+        <div>
+            <h2 class="titulo">vamos fazer o que?</h2>
+            <button class="botao" onclick="toggleMenu()">Escolher opções</button>
+
+<div id="menu" class="menu-opcoes">
+  <label><input type="checkbox" name="opcao" value="1"> Opção 1</label>
+  <label><input type="checkbox" name="opcao" value="2"> Opção 2</label>
+  <label><input type="checkbox" name="opcao" value="3"> Opção 3</label>
+  <label><input type="checkbox" name="opcao" value="4"> Opção 4</label>
+</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+
+  // Fecha o menu se clicar fora dele
+  document.addEventListener('click', function(event) {
+    const menu = document.getElementById('menu');
+    const button = document.querySelector('.botao');
+    if (!menu.contains(event.target) && !button.contains(event.target)) {
+      menu.style.display = 'none';
+    }
+  });
+</script>
+        </div>
+   </main>
+</body>
+</html>

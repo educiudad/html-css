@@ -1,0 +1,60 @@
+
+@font-face {
+    src: url(fontes/Nexa-ExtraLight.ttf);format:("truetype");
+    font-family: "Nexa";
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image:linear-gradient(to right,#800400, #E60600);
+}
+
+
+.principal{
+    height: 140px;
+    width: 500px;
+    text-align: center;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 80px;
+    font-family: "Nexa";
+    background-color: #f8605b8c;
+    box-shadow: 2px 2px 2px 4px #800400 ;
+}
+
+.botao01{
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+     background-color: #f94640a1;
+     border-color: black;
+}
+
+
+.titulo{
+    text-align: center;
+    font-family: "Nexa";
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 850px;
+    margin: auto;
+    background-color: #f8605b8c;
+    box-shadow: 2px 2px 2px 4px #800400 ;
+}
+
+.imagens{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.emogi01{
+    float:left;
+    width: 550px;
+}
+
+.emogi02{
+   float: right;
+    width: 500px;
+}

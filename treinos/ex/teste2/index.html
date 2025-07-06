@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤❤❤❤</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #a72c5b, #780c35);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+        .container {
+            background-color: #a72c5b;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #a1154a;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px #780c35;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 200px
+        }
+        button {
+            background-color: #780c35;
+            color: #f2f2f2;
+            margin-top: 200px;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #801f44;
+            margin-top: 200px
+        }
+        
+        
+        .image-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            margin-top: 200px
+        }
+        .image-container img {
+            max-width: 200px;
+            border-radius: 10px;
+            margin-top: 200px
+        }
+        #responseImage {
+            width:600px;
+            height: 600px;
+            object-fit: contain;
+        
+        }  
+        
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <h2>vc aceita ser o amor da minha vida?</h2>
+        <button onclick="window.open('002.html', '_self');">Sim</button>
+        <button onclick="moverLayout()">Não</button>
+    </div>
+
+    <div class="image-container" id="imageContainer">
+        <img src="foto sonego.jpg" alt="Imagem" id="responseImage">
+    </div>
+
+    <script>
+        function responder(resposta) {
+            alert("Você escolheu: " + resposta);
+            document.getElementById("container").style.display = "none";
+            document.getElementById("imageContainer").style.display = "block";
+            
+            for (let i = 0; i < 10; i++) {
+                createHeart();
+            }
+        }
+
+        function moverLayout() {
+            let container = document.getElementById("container");
+            let maxX = window.innerWidth - container.clientWidth;
+            let maxY = window.innerHeight - container.clientHeight;
+            
+            let novoX = Math.floor(Math.random() * maxX);
+            let novoY = Math.floor(Math.random() * maxY);
+            
+            container.style.left = novoX + "px";
+            container.style.top = novoY + "px";
+        }
+
+        function createHeart() {
+            let heart = document.createElement("div");
+            heart.className = "heart";
+            heart.innerHTML = "❤️";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.top = "100vh";
+            heart.style.position = "absolute";
+            heart.style.fontSize = Math.random() * 20 + 10 + "px";
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

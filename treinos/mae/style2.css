@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Nexa";
+    src: url(fontes/Nexa-ExtraLight.ttf);format:("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.titulo{
+    text-align: center;
+    font-family: "Nexa";
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 850px;
+    margin: auto;
+    background-color: #f8605b8c;
+    box-shadow: 2px 2px 2px 4px #800400 ;
+}
+
+.imagens{
+    text-align: center;
+    margin-top: 50px;
+}
+

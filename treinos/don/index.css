@@ -1,0 +1,27 @@
+:root {
+    --cor0:#FEFEFE
+    --cor1:#BF3641
+    --cor2:#EE0000
+    --cor3:#009435
+    --cor4:rgb (0, 0, 0)
+   
+}
+
+.exemplo {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200px;
+    width: 90%;
+    background-color: rgb(255, 247, 217);
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(216, 209, 182, 0.497);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    
+}
+
+p {
+    color: var(--cor4);
+}
